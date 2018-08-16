@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>测试调取本地摄像头</title>
+</head>
+<body>
+        <label>照相机</label>
+        <input type="file" id='image' accept="image/*" capture='camera'>
+        <br>
+        <label>摄像机</label>
+        <input type="file" id='video' accept="video/*" capture='camcorder'>
+
+</body>
+<SCRIPT>
+    var file = document.querySelector('input');
+        if (getIos()) {
+            file.removeAttribute("capture");
+        }
+        function getIos() {
+            var ua=navigator.userAgent.toLowerCase();
+            if (ua.match(/iPhone\sOS/i) == "iphone os") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+</SCRIPT>
+</html>

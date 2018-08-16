@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>登陆</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+    <title>登录</title>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-    
+    <div class="content">
+        <p>用户登录</p>
+        <div class="longin-boder">
+            <div class="image"><img src="images/user.png"></div>
+            <input class="input user" type="text" placeholder="请输入手机号码"/>
+        </div> 
+        <!--End用户名输入框-->
+        <div class="longin-boder">
+            <div class="image"><img src="images/pwd.png"></div>
+            <input class="input pwd" type="password" placeholder="请输入密码"/>
+        </div>
+        <!--End密码输入框-->
+        <div class="button login">登录</div>
+        <div class="button regist">注册</div>
+    </div>
+     <script src="js/login.js"></script>
 </body>
+
 </html>
